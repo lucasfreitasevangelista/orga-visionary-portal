@@ -5,7 +5,7 @@ import { TeamMember } from '../types';
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Gyovana Camargo",
+    name: "Giovana Camargo",
     role: "Especialista em Liderança e Desenvolvimento de Equipes",
     bio: "Especialista em desenvolver líderes eficazes e equipes de alta performance, com ampla experiência em treinamentos corporativos.",
     image: "/team-member-1.jpg"
