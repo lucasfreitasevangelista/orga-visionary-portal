@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,14 +66,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				intaw: {
-					'blue': '#1E3A8A',
-					'light-blue': '#3B82F6',
-					'navy': '#0F172A',
-					'gray': '#64748B',
-					'light-gray': '#F1F5F9',
-					'accent': '#38BDF8',
-					'white': '#FFFFFF',
+				menopausa: {
+					'pink': '#FF6B99',
+					'light-pink': '#FFD2E0',
+					'dark-pink': '#DB4776',
+					'lavender': '#E7D1FF',
+					'soft-purple': '#A67EB7',
+					'cream': '#FFF9F3',
+					'gray': '#5A5A5A',
+					'light-gray': '#F5F5F5',
 				}
 			},
 			borderRadius: {
@@ -83,13 +83,19 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				heading: ['Poppins', 'sans-serif'],
+				sans: ['Montserrat', 'sans-serif'],
+				serif: ['Playfair Display', 'serif'],
 			},
 			boxShadow: {
 				'premium': '0 10px 50px -12px rgba(0, 0, 0, 0.25)',
-				'card': '0 0 25px rgba(0, 0, 0, 0.05)',
+				'card': '0 5px 15px rgba(0, 0, 0, 0.05)',
 				'hover': '0 15px 30px rgba(0, 0, 0, 0.1)',
+				'soft': '0 5px 15px rgba(255, 107, 153, 0.15)',
+			},
+			backgroundImage: {
+				'hero-pattern': 'linear-gradient(rgba(255, 107, 153, 0.15), rgba(255, 107, 153, 0.05)), url("/hero-bg.jpg")',
+				'wave-pattern': 'url("/wave-bg.svg")',
+				'gradient-pink': 'linear-gradient(135deg, #FFD2E0 0%, #FF6B99 100%)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -141,8 +147,9 @@ export default {
 				'slide-up': 'slide-up 0.7s ease-out forwards',
 			},
 			backgroundImage: {
-				'hero-pattern': 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url("/hero-bg.jpg")',
-				'card-gradient': 'linear-gradient(to right, #f1f5f9, #ffffff)',
+				'hero-pattern': 'linear-gradient(rgba(255, 107, 153, 0.15), rgba(255, 107, 153, 0.05)), url("/hero-bg.jpg")',
+				'wave-pattern': 'url("/wave-bg.svg")',
+				'gradient-pink': 'linear-gradient(135deg, #FFD2E0 0%, #FF6B99 100%)',
 			},
 		}
 	},
