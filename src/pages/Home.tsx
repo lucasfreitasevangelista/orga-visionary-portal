@@ -1,80 +1,57 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PublicLayout from "@/components/layout/PublicLayout";
-import { 
-  CalendarCheck, 
-  Clock, 
-  ShieldCheck, 
-  HeartPulse, 
-  Users, 
-  Sparkles, 
-  CheckCircle, 
-  MessageCircle,
-  Star
-} from "lucide-react";
-
+import { CalendarCheck, Clock, ShieldCheck, HeartPulse, Users, Sparkles, CheckCircle, MessageCircle, Star } from "lucide-react";
 const Home = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=%2B5511959321999&text&type=phone_number&app_absent=0";
 
   // Mock data
-  const testimonials = [
-    {
-      id: "1",
-      name: "Sandra Oliveira",
-      age: 52,
-      content: "A plataforma MENOPAUSA 24H mudou minha vida. Finalmente encontrei médicos que me entendem e um atendimento acolhedor. As consultas online são práticas e os médicos muito atenciosos.",
-      rating: 5,
-      image: "/testimonials/user1.jpg",
-      date: new Date("2023-10-15")
-    },
-    {
-      id: "2",
-      name: "Regina Costa",
-      age: 49,
-      content: "Estava sofrendo com ondas de calor e insônia por meses. Graças à MENOPAUSA 24H, tive acesso a especialistas que realmente entenderam meus sintomas e me ajudaram a ter qualidade de vida novamente.",
-      rating: 5,
-      image: "/testimonials/user2.jpg",
-      date: new Date("2023-09-20")
-    },
-    {
-      id: "3",
-      name: "Márcia Andrade",
-      age: 55,
-      content: "O acompanhamento contínuo faz toda a diferença. Posso falar com minha médica quando preciso, sem precisar esperar meses por uma consulta. A equipe toda é muito atenciosa.",
-      rating: 4,
-      image: "/testimonials/user3.jpg",
-      date: new Date("2023-11-05")
-    }
-  ];
-
-  const specialists = [
-    {
-      id: "1",
-      name: "Dra. Ana Beatriz",
-      specialty: "Ginecologia",
-      image: "/specialists/doctor1.jpg",
-      description: "Especialista em saúde da mulher com foco em climatério e menopausa."
-    },
-    {
-      id: "2",
-      name: "Dr. Ricardo Mendes",
-      specialty: "Endocrinologia",
-      image: "/specialists/doctor2.jpg",
-      description: "Especialista em distúrbios hormonais e tratamentos para menopausa."
-    },
-    {
-      id: "3",
-      name: "Dra. Camila Santos",
-      specialty: "Psicologia",
-      image: "/specialists/doctor3.jpg",
-      description: "Especializada em saúde mental feminina durante as fases de transição hormonal."
-    }
-  ];
-
-  return (
-    <PublicLayout>
+  const testimonials = [{
+    id: "1",
+    name: "Sandra Oliveira",
+    age: 52,
+    content: "A plataforma MENOPAUSA 24H mudou minha vida. Finalmente encontrei médicos que me entendem e um atendimento acolhedor. As consultas online são práticas e os médicos muito atenciosos.",
+    rating: 5,
+    image: "/testimonials/user1.jpg",
+    date: new Date("2023-10-15")
+  }, {
+    id: "2",
+    name: "Regina Costa",
+    age: 49,
+    content: "Estava sofrendo com ondas de calor e insônia por meses. Graças à MENOPAUSA 24H, tive acesso a especialistas que realmente entenderam meus sintomas e me ajudaram a ter qualidade de vida novamente.",
+    rating: 5,
+    image: "/testimonials/user2.jpg",
+    date: new Date("2023-09-20")
+  }, {
+    id: "3",
+    name: "Márcia Andrade",
+    age: 55,
+    content: "O acompanhamento contínuo faz toda a diferença. Posso falar com minha médica quando preciso, sem precisar esperar meses por uma consulta. A equipe toda é muito atenciosa.",
+    rating: 4,
+    image: "/testimonials/user3.jpg",
+    date: new Date("2023-11-05")
+  }];
+  const specialists = [{
+    id: "1",
+    name: "Dra. Ana Beatriz",
+    specialty: "Ginecologia",
+    image: "/specialists/doctor1.jpg",
+    description: "Especialista em saúde da mulher com foco em climatério e menopausa."
+  }, {
+    id: "2",
+    name: "Dr. Ricardo Mendes",
+    specialty: "Endocrinologia",
+    image: "/specialists/doctor2.jpg",
+    description: "Especialista em distúrbios hormonais e tratamentos para menopausa."
+  }, {
+    id: "3",
+    name: "Dra. Camila Santos",
+    specialty: "Psicologia",
+    image: "/specialists/doctor3.jpg",
+    description: "Especializada em saúde mental feminina durante as fases de transição hormonal."
+  }];
+  return <PublicLayout>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-menopausa-light-pink to-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
@@ -100,11 +77,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex justify-center md:justify-end">
-              <img 
-                src="/hero-image.jpg" 
-                alt="Mulher sorrindo" 
-                className="rounded-lg shadow-soft max-w-full h-auto"
-              />
+              <img alt="Mulher sorrindo" className="rounded-lg shadow-soft max-w-full h-auto" src="https://drleonardomartinspires.com.br/wp-content/uploads/2022/10/menopausa-mulher-sentada-no-sofa-sorrindo-e-com-os-pes-para-cima.webp" />
             </div>
           </div>
         </div>
@@ -178,11 +151,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <img 
-                src="/about-image.jpg" 
-                alt="Médicos consultando paciente" 
-                className="rounded-lg shadow-soft"
-              />
+              <img src="/about-image.jpg" alt="Médicos consultando paciente" className="rounded-lg shadow-soft" />
             </div>
             <div>
               <h2 className="text-3xl font-serif font-bold text-menopausa-dark-pink mb-4">
@@ -220,14 +189,9 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {specialists.map((specialist) => (
-              <div key={specialist.id} className="bg-white rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300 overflow-hidden">
+            {specialists.map(specialist => <div key={specialist.id} className="bg-white rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300 overflow-hidden">
                 <div className="h-64 overflow-hidden">
-                  <img 
-                    src={specialist.image} 
-                    alt={specialist.name} 
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
+                  <img src={specialist.image} alt={specialist.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-medium text-menopausa-dark-pink mb-1">{specialist.name}</h3>
@@ -239,8 +203,7 @@ const Home = () => {
                     </Button>
                   </a>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           <div className="text-center mt-12">
@@ -327,33 +290,23 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300">
+            {testimonials.map(testimonial => <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300">
                 <div className="flex items-center space-x-1 mb-4">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star
-                      key={i}
-                      size={18}
-                      className={i < testimonial.rating ? "text-menopausa-pink fill-menopausa-pink" : "text-gray-300"}
-                    />
-                  ))}
+                  {Array.from({
+                length: 5
+              }).map((_, i) => <Star key={i} size={18} className={i < testimonial.rating ? "text-menopausa-pink fill-menopausa-pink" : "text-gray-300"} />)}
                 </div>
                 <p className="text-menopausa-gray mb-6 italic">"{testimonial.content}"</p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name} 
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h4 className="font-medium text-menopausa-dark-pink">{testimonial.name}</h4>
                     <p className="text-sm text-menopausa-gray">{testimonial.age} anos</p>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -439,12 +392,7 @@ const Home = () => {
               Inscreva-se em nossa newsletter e receba conteúdos exclusivos sobre saúde da mulher no climatério e menopausa.
             </p>
             <form className="flex flex-col sm:flex-row gap-2 max-w-lg mx-auto">
-              <input 
-                type="email" 
-                placeholder="Seu e-mail" 
-                className="flex-1 rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-menopausa-pink"
-                required
-              />
+              <input type="email" placeholder="Seu e-mail" className="flex-1 rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-menopausa-pink" required />
               <Button type="submit" className="bg-menopausa-pink hover:bg-menopausa-dark-pink text-white">
                 Inscrever-se
               </Button>
@@ -455,8 +403,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </PublicLayout>
-  );
+    </PublicLayout>;
 };
-
 export default Home;
