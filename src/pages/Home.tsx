@@ -5,12 +5,13 @@ import HeroSection from "@/components/home/HeroSection";
 import FeaturesSection from "@/components/home/FeaturesSection";
 import AboutSection from "@/components/home/AboutSection";
 import SpecialistsSection from "@/components/home/SpecialistsSection";
-import Pricing from "@/components/Pricing";
+import PricingSection from "@/components/home/PricingSection";
 import HowItWorksSection from "@/components/home/HowItWorksSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CtaSection from "@/components/home/CtaSection";
 import FaqPreviewSection from "@/components/home/FaqPreviewSection";
 import NewsletterSection from "@/components/home/NewsletterSection";
+import WhatsAppButton from "@/components/home/WhatsAppButton";
 
 const Home = () => {
   return (
@@ -19,12 +20,13 @@ const Home = () => {
       <FeaturesSection />
       <AboutSection />
       <SpecialistsSection />
-      <Pricing />
+      <PricingSection />
       <HowItWorksSection />
       <TestimonialsSection />
       <CtaSection />
       <FaqPreviewSection />
       <NewsletterSection />
+      <WhatsAppButton />
     </PublicLayout>
   );
 };

@@ -1,60 +1,60 @@
 
 import React from "react";
-import { Clock, Users, ShieldCheck, HeartPulse } from "lucide-react";
+import { Heart, Video, FileText, BookOpen } from "lucide-react";
 
 const FeaturesSection = () => {
+  const features = [
+    {
+      icon: <Heart className="w-12 h-12 text-menopausa-pink" />,
+      title: "Especialistas dedicados",
+      description: "Atendimento com ginecologistas, psicólogas e nutricionistas especializados em menopausa e climatério."
+    },
+    {
+      icon: <Video className="w-12 h-12 text-menopausa-pink" />,
+      title: "Telemedicina humanizada",
+      description: "Acompanhamento humanizado por telemedicina no conforto da sua casa, quando você precisar."
+    },
+    {
+      icon: <FileText className="w-12 h-12 text-menopausa-pink" />,
+      title: "Documentação 100% online",
+      description: "Receituário, atestados e orientações médicas disponíveis digitalmente na sua área de usuária."
+    },
+    {
+      icon: <BookOpen className="w-12 h-12 text-menopausa-pink" />,
+      title: "Conteúdo exclusivo",
+      description: "Acesso a artigos, vídeos e conteúdos exclusivos sobre bem-estar e saúde na menopausa."
+    }
+  ];
+
   return (
-    <section className="py-16 bg-white">
+    <section id="beneficios" className="py-16 bg-menopausa-cream">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl font-serif font-bold text-menopausa-dark-pink mb-4">
-            Por que escolher a MENOPAUSA 24H?
+            Benefícios da nossa plataforma
           </h2>
-          <p className="text-menopausa-gray max-w-3xl mx-auto">
-            Nossa plataforma foi desenvolvida especialmente para mulheres que estão passando pela menopausa ou climatério, oferecendo atendimento personalizado e acolhedor.
+          <p className="text-menopausa-gray max-w-2xl mx-auto">
+            Criamos um ambiente acolhedor e completo para que você tenha todo suporte necessário durante essa fase.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300">
-            <div className="w-12 h-12 bg-menopausa-light-pink rounded-full flex items-center justify-center mb-4 mx-auto md:mx-0">
-              <Clock className="text-menopausa-dark-pink" size={24} />
+          {features.map((feature, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-xl p-6 shadow-card hover:shadow-hover transition-shadow duration-300 text-center"
+            >
+              <div className="flex justify-center mb-4">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-semibold text-menopausa-dark-pink mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-menopausa-gray">
+                {feature.description}
+              </p>
             </div>
-            <h3 className="text-xl font-medium text-menopausa-dark-pink mb-2 text-center md:text-left">Atendimento 24h</h3>
-            <p className="text-menopausa-gray text-center md:text-left">
-              Acesso a especialistas a qualquer hora do dia ou da noite, quando você mais precisar.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300">
-            <div className="w-12 h-12 bg-menopausa-light-pink rounded-full flex items-center justify-center mb-4 mx-auto md:mx-0">
-              <Users className="text-menopausa-dark-pink" size={24} />
-            </div>
-            <h3 className="text-xl font-medium text-menopausa-dark-pink mb-2 text-center md:text-left">Especialistas Dedicados</h3>
-            <p className="text-menopausa-gray text-center md:text-left">
-              Profissionais especializados em saúde feminina durante o climatério e menopausa.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300">
-            <div className="w-12 h-12 bg-menopausa-light-pink rounded-full flex items-center justify-center mb-4 mx-auto md:mx-0">
-              <ShieldCheck className="text-menopausa-dark-pink" size={24} />
-            </div>
-            <h3 className="text-xl font-medium text-menopausa-dark-pink mb-2 text-center md:text-left">Privacidade e Segurança</h3>
-            <p className="text-menopausa-gray text-center md:text-left">
-              Seus dados e informações médicas são protegidos com os mais altos padrões de segurança.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-hover transition-shadow duration-300">
-            <div className="w-12 h-12 bg-menopausa-light-pink rounded-full flex items-center justify-center mb-4 mx-auto md:mx-0">
-              <HeartPulse className="text-menopausa-dark-pink" size={24} />
-            </div>
-            <h3 className="text-xl font-medium text-menopausa-dark-pink mb-2 text-center md:text-left">Cuidado Integrado</h3>
-            <p className="text-menopausa-gray text-center md:text-left">
-              Abordagem multidisciplinar que cuida de todos os aspectos da sua saúde física e emocional.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
