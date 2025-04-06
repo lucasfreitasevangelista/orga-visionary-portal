@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PublicLayout from "@/components/layout/PublicLayout";
 import { CalendarCheck, Clock, ShieldCheck, HeartPulse, Users, Sparkles, CheckCircle, MessageCircle, Star } from "lucide-react";
+import Pricing from "@/components/Pricing";
+
 const Home = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=%2B5511959321999&text&type=phone_number&app_absent=0";
 
@@ -51,6 +53,7 @@ const Home = () => {
     image: "/specialists/doctor3.jpg",
     description: "Especializada em saúde mental feminina durante as fases de transição hormonal."
   }];
+
   return <PublicLayout>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-menopausa-light-pink to-white">
@@ -215,6 +218,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <Pricing />
 
       {/* How It Works Section */}
       <section className="py-16 bg-menopausa-light-pink">
