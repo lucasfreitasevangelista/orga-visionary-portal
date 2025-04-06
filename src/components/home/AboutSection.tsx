@@ -1,15 +1,12 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
 const AboutSection = () => {
-  return (
-    <section className="py-16 bg-menopausa-cream">
+  return <section className="py-16 bg-menopausa-cream">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <img src="/about-image.jpg" alt="Médicos consultando paciente" className="rounded-lg shadow-soft" />
+            <img alt="Médicos consultando paciente" className="rounded-lg shadow-soft" src="https://telemedicinamorsch.com.br/wp-content/uploads/2022/08/como-atender-na-telemedicina-telemedicina-morsch.jpg" />
           </div>
           <div>
             <h2 className="text-3xl font-serif font-bold text-menopausa-dark-pink mb-4">
@@ -32,8 +29,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
