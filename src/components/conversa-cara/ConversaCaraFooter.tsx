@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Instagram, Twitter, Linkedin, Youtube, Spotify, Rss } from "lucide-react";
+import { Instagram, Twitter, Linkedin, Youtube, Music, Rss } from "lucide-react";
 
 const ConversaCaraFooter = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ const ConversaCaraFooter = () => {
   ];
 
   const streamingLinks = [
-    { icon: <Spotify size={20} />, href: "#", label: "Spotify" },
+    { icon: <Music size={20} />, href: "#", label: "Spotify" },
     { icon: <Rss size={20} />, href: "#", label: "Apple Podcasts" },
     { icon: <Youtube size={20} />, href: "#", label: "YouTube" },
     { icon: <Rss size={20} />, href: "#", label: "Google Podcasts" },
