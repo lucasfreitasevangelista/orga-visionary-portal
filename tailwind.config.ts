@@ -75,6 +75,15 @@ export default {
 					'cream': '#FFF9F3',
 					'gray': '#5A5A5A',
 					'light-gray': '#F5F5F5',
+				},
+				conversa: {
+					'dark': '#111827',
+					'darker': '#0B1120',
+					'gold': '#D4AF37',
+					'muted-gold': '#AA9955',
+					'navy': '#0F172A',
+					'charcoal': '#333333',
+					'white': '#FFFFFF'
 				}
 			},
 			borderRadius: {
@@ -91,11 +100,13 @@ export default {
 				'card': '0 5px 15px rgba(0, 0, 0, 0.05)',
 				'hover': '0 15px 30px rgba(0, 0, 0, 0.1)',
 				'soft': '0 5px 15px rgba(255, 107, 153, 0.15)',
+				'gold': '0 5px 15px rgba(212, 175, 55, 0.15)',
 			},
 			backgroundImage: {
 				'hero-pattern': 'linear-gradient(rgba(255, 107, 153, 0.15), rgba(255, 107, 153, 0.05)), url("/hero-bg.jpg")',
 				'wave-pattern': 'url("/wave-bg.svg")',
 				'gradient-pink': 'linear-gradient(135deg, #FFD2E0 0%, #FF6B99 100%)',
+				'gradient-gold': 'linear-gradient(135deg, #D4AF37 0%, #AA9955 100%)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -128,7 +139,7 @@ export default {
 				},
 				'pulse-subtle': {
 					'0%, 100%': { opacity: '1' },
-					'50%': { opacity: '0.85' },
+					'50%': { opacity: '0.7' },
 				},
 				'slide-up': {
 					'0%': { transform: 'translateY(100%)' },
@@ -143,13 +154,14 @@ export default {
 				'fade-in-left': 'fade-in-left 0.7s ease-out forwards',
 				'scale-in': 'scale-in 0.5s ease-out forwards',
 				'float': 'float 4s ease-in-out infinite',
-				'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite',
+				'pulse-subtle': 'pulse-subtle 4s ease-in-out infinite',
 				'slide-up': 'slide-up 0.7s ease-out forwards',
 			},
 			backgroundImage: {
 				'hero-pattern': 'linear-gradient(rgba(255, 107, 153, 0.15), rgba(255, 107, 153, 0.05)), url("/hero-bg.jpg")',
 				'wave-pattern': 'url("/wave-bg.svg")',
 				'gradient-pink': 'linear-gradient(135deg, #FFD2E0 0%, #FF6B99 100%)',
+				'gradient-gold': 'linear-gradient(135deg, #D4AF37 0%, #AA9955 100%)',
 			},
 		}
 	},
