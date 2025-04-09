@@ -11,6 +11,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import Index from "./pages/Index";
+import MadisBPO from "./pages/MadisBPO";
 
 // Dashboard e Páginas Protegidas
 import Dashboard from "./pages/Dashboard/Dashboard";
@@ -29,6 +31,8 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/madis-bpo" element={<MadisBPO />} />
+            <Route path="/index" element={<Index />} />
             
             {/* Rotas Protegidas */}
             <Route path="/dashboard" element={<Dashboard />} />
